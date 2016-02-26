@@ -49,8 +49,6 @@ To build for the RaspberryPi2B, you'll need to use the raspberrypi2 overlay prov
 
 Find the folder named "overlays" in the "src" folder of the code you checked out. You'll see a number of folders with names starting "overlay-". Place the overlay-raspberrypi2 folder in this folder alongside the other overlays.
 
-In order to guarantee a working time sync function in the resulting image which you are about to build, you will need to adjust the date that is set via file "overlay-raspberrypi2/chromeos-base/time-sync/files/time.conf" within the overlay. The relevant line starts with "date -s". Adjust the date which is set here to a date/time after the build will be completed. If you don't do this, tlsdate will refuse to sync. If you skip this step, you still have the option to adjust the script in the running build from the dev console later.
-
 Board setup:
 ------------
 
